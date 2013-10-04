@@ -17,5 +17,9 @@ module HandyControllerHelpers
       flash[:notice].should =~ /was successfully destroyed./i
     end
 
+    def flash_recovered?
+      flash[:notice].should =~ /was successfully recovered/i
+    end
+
   end
 end
